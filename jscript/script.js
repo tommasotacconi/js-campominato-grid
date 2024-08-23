@@ -26,8 +26,16 @@ button.addEventListener('click', function () {
   // e sfrutto la funzione create cell precedentemente creata;
   for (let i = 0; i < totCells; i++) {
     const cell = createCell(i + 1);
+
+    // -Attacco un event listener alla cella che faccia cambiare
+    // il suo colore quando cliccata e che stampi in console il suo
+    // numero
+    cell.addEventListener('click', function () {
+      cell.classList.toggle('clicked');
+      console.log(cell.innerText);
+    })
   
-    // inserisco la cella in pagina
+    // -Inserisco la cella in pagina
     grid.appendChild(cell);
   }
 });

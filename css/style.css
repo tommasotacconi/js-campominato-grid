@@ -72,6 +72,11 @@ section {
   margin: 40px auto 10px;
 }
 
+.button-box {
+  padding: 15px;
+  line-height: 40px;  
+}
+
 .cell {
   height: calc(100% / 10);
   flex-basis: calc(100% / 10);
@@ -79,10 +84,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.button-box {
-  padding: 15px;
-  line-height: 40px;  
+.cell.clicked {
+  background-color: aqua;
 }
+
+
 
