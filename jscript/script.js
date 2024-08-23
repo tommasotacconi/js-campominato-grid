@@ -1,7 +1,8 @@
 // FUNZIONI
-function createCell () {
+function createCell (content) {
   const cell = document.createElement('div');
   cell.className = 'cell';
+  cell.append(content);
   return cell;
 }
 
@@ -24,9 +25,9 @@ button.addEventListener('click', function () {
   // -Inserisco dinamicamente le celle con un ciclo for
   // e sfrutto la funzione create cell precedentemente creata;
   for (let i = 0; i < totCells; i++) {
-    const cell = createCell();
+    const cell = createCell(i + 1);
   
     // inserisco la cella in pagina
     grid.appendChild(cell);
   }
-})
+});

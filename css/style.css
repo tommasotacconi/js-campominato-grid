@@ -76,6 +76,9 @@ section {
   height: calc(100% / 10);
   flex-basis: calc(100% / 10);
   border: 2px solid darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-box {
