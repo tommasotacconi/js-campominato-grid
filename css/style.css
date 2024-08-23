@@ -15,6 +15,12 @@ section {
   padding: 30px 15px;
 }
 
+/* var for cell dimensions */
+:root {
+  --cell-beginner: calc(100% / 10);
+  --cell-intermediate: calc(100% / 9);
+  --cell-expert: calc(100% / 7);
+}
 /* header {
   position: fixed;
   left: 0px;
@@ -72,13 +78,25 @@ section {
   margin: 40px auto 10px;
 }
 
+.commands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-box {
-  padding: 15px;
-  line-height: 40px;  
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.select-box {
+  flex-basis: 50%;
 }
 
 .cell {
-  height: calc(100% / 10);
   flex-basis: calc(100% / 10);
   border: 2px solid darkcyan;
   display: flex;
@@ -89,6 +107,21 @@ section {
 
 .cell.clicked {
   background-color: aqua;
+}
+
+.cell.beginner {
+  height: var(--cell-beginner);
+  flex-basis: var(--cell-beginner);
+}
+
+.cell.intermediate {
+  height: var(--cell-intermediate);
+  flex-basis: var(--cell-intermediate);
+}
+
+.cell.expert {
+  height: var(--cell-expert);
+  flex-basis: var(--cell-expert);
 }
 
 

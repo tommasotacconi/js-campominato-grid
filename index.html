@@ -22,8 +22,19 @@
     <div class="container-lg">
       <section class="grid-sec txt-alcenter">
         <h1>Griglia Dinamica</h1>
-        <div class="button-box">
-          <button class="btn-rd btn-rd-hov">Play</button>
+        <div class="commands ">
+          <div class="button-box">
+            <button class="btn-rd btn-rd-hov">Play</button>
+          </div>
+          <div class="select-box">
+            Difficoltà:
+            <select name="levels" id="level-select">
+              <option value="">scegli un livello</option>
+              <option value="lvl-1">beginner</option>
+              <option value="lvl-2">intermediate</option>
+              <option value="lvl-3">expert</option>
+            </select>
+          </div>
         </div>
         <div id="grid" class="d-flex f-wrap">
         </div>
