@@ -78,3 +78,8 @@ section {
   border: 2px solid darkcyan;
 }
 
+.button-box {
+  padding: 15px;
+  line-height: 40px;  
+}
+
